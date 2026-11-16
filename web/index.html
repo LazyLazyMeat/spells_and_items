@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spells and Items by LLM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="#/spells">Spells and Items by LLM</a></h1>
+        <nav>
+            <a href="#/spells" data-route="spells">Заклинания</a>
+            <a href="#/items"  data-route="items">Предметы</a>
+            <a href="#/tracker" data-route="tracker">Колода</a>
+            <a href="#/attunement" data-route="attunement">Настройки</a>
+        </nav>
+        <input type="search" id="search" placeholder="Поиск по названию…" autocomplete="off">
+    </header>
+    <main id="app">
+        <aside id="filters"></aside>
+        <section id="content"></section>
+    </main>
+    <script src="spells.js"></script>
+    <script src="items.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
